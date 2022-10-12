@@ -1,0 +1,781 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Black.woff2') format('woff2'),
+        url('../fonts/Rubik-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Bold.woff2') format('woff2'),
+        url('../fonts/Rubik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-BlackItalic.woff2') format('woff2'),
+        url('Rubik-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-ExtraBold.woff2') format('woff2'),
+        url('Rubik-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/Rubik-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-BoldItalic.woff2') format('woff2'),
+        url('Rubik-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-LightItalic.woff2') format('woff2'),
+        url('Rubik-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Italic.woff2') format('woff2'),
+        url('Rubik-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Light.woff2') format('woff2'),
+        url('../fonts/Rubik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+        url('../fonts/Rubik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Regular.woff2') format('woff2'),
+        url('../fonts/Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Rubik-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Rubik-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-SemiBold.woff2') format('woff2'),
+        url('../fonts/Rubik-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Rubik";
+    margin: 0;
+    padding: 0;
+    /* padding-top: 216px; */
+}
+.container {
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+.site-header {
+    /* position: fixed; */
+    top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+    padding-top: 30px;
+    background-color: #F6F6F6;
+}
+.header-inner {
+    justify-content: space-between;
+    background: #F6F6F6;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.header-top {
+    margin: 0;
+    padding: 20px 0px;
+}
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo {
+    background: #fff;
+}
+.valyuta {
+    margin-left: 40px;
+}
+
+.dollar-link, .rubl-link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-right: 25px;
+}
+.dollar-icon, .rubl-icon {
+    color: #2959CE;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search {
+    display: flex;
+    width: 275px;
+    height: 35px;    
+    background: #FFFFFF;
+    border-radius: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    padding: 0px 15px;
+}
+.search:focus {
+    outline: 1px solid #8D8D8D;
+}
+.icon-search  {
+    margin: 13px 6px 12px 15px;
+}
+.placeholder-search {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8D8D8D;
+}
+
+.select-lang {
+    display: flex;
+    width: 70px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    background: #DCE6FF;
+    border-radius: 39px;
+    margin: 0px 25px;
+}
+.lang-uz {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 7px;
+}
+.lang-ru {
+    margin: 11px 13px 10px 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #A6A6A6;
+}
+.login {
+    padding: 13px 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: #7296EC;
+    border-radius: 10px;
+}
+.login-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    margin: 0;
+    padding: 30px 0px 20px;
+    background-color: #fff;
+}
+.nav-list {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+.nav-item {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik";
+}
+.nav-link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #7F7F7F;
+}
+
+.nav-break {
+    height: 0px;
+    left: 120px;
+    top: 176px;
+    border: 1px solid #D1D1D1;
+    margin-bottom: 40px;
+}
+
+.shopme-ad {
+    margin-bottom: 50px;
+}
+.news-content {
+    height: 132px;
+}
+.news-list {
+    margin-bottom: 50px;
+}
+.hero-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+.hero-item {
+    list-style-type: none;
+    padding: 0;
+    margin: -10px;
+    padding: 20px 17px 18px;
+    background: #F6F6F6;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.hero-news-title {
+    width: 358px;
+    margin: 0;
+    padding: 0;
+}
+.hero-link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin: 0;
+
+}
+.hero-news-text {
+    width: 346px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4A4B4C;
+    margin: 10px 0px 15px;
+}
+.hero-news-img {
+    width: 359px;
+    height: 165px;
+    margin-top: 10px;
+}
+.news-site {
+    display: block;
+}
+
+.news-site {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.small-site-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5E5F61;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.notif-inner {
+    display: block;
+    margin: 30px 90px;
+}
+
+.notif-bg {
+    background-image: url('../images/notification-bg.png');
+    background-repeat: no-repeat;
+    padding: 25px 71px 25px 29px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+.notif-title {
+    margin: 0;
+    padding: 0;
+    width: 404px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+.notif-link {
+    padding: 13px 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #F78B3B;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.m-news-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.middle-left {
+    width: 797px;
+    padding: 0;
+}
+.left-item {
+    padding: 0;
+    display: flex;
+    padding: 20px;
+    background-color: #F6F6F6;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.middle-content {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    margin-top: -20px;
+}
+.middle-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+.middle-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4A4B4C;
+}
+
+.middle-right {
+    background-color: #F6F6F6;
+    width: 393px;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 15px;
+    padding: 10px;
+}
+.right-news-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.middle-right-list {
+    padding: 0;
+}
+.right-item {
+    list-style-type: none;
+    padding: 0;
+    padding: 5px 65px 5px 17px;
+    margin: 0;
+}
+.right-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.right-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #5E5F61;
+}
+.right-line {
+    color:  #D2D2D2;
+    padding: 0;
+    margin: 0;
+}
+.little-ad {
+    padding: 0;
+    margin: 0;
+    margin: 10px 0px;
+    margin-left: -10px;
+}
+.little-ad img{
+    vertical-align: middle;
+}
+.left-link {
+    display: block;
+    background: #EAEAEA;
+    border-radius: 10px;
+    padding: 17px 0;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+
+footer {
+    background-color: #7297EF;
+}
+.footer-inner {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.white-logo {
+    margin: 20px 20px 20px 115px;
+}
+.f-left {
+    width: 229px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-right: 120px;
+}
+.f-center {
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.f-center-item {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    list-style-type: none;
+}
+
+.f-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.f-right {
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+}
+.f-right-item {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    list-style-type: none;
+}
+
+.footer-line {
+    width: 998px;
+    border-top: 1px solid #CECECE;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 40px;
+}
+
+.net-text {
+    width: 161px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.net-icons img{
+    vertical-align: middle;
+}
+
+.net-icons a {
+    margin-left: 25px;
+}
+
+
+/*---- FINISHED  PAGE 1 (HOME PAGE)-----*/
+
+
+/*------    STARTED CONTACTS PAGE------*/
+
+.mail-section {
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.form-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+#user-name {
+    width: 343px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 18px;
+    margin-right: 10px;
+}
+#user-phone {
+    width: 343px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 18px 20px;
+}
+#user-email {
+    width: 700px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: block;
+    margin: 10px 0px;
+}
+#user-text {
+    display: block;
+    width: 700px;
+    height: 180px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    resize: none;
+}
+.btn-block {
+    display: flex;
+    justify-content: flex-end;
+}
+#send-btn {
+    padding: 17px 30px;
+    background: #7297EF;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-color: #7297ef;
+}
+.mail-right {
+    padding: 0;
+    margin-top: 68px;
+    background: #F6F6F6;
+    border-radius: 10px;
+    width: 100%;
+    height: 310px;
+    margin-left: 10px;
+    padding: 20px 15px 10px 15px;
+}
+.contact-text {
+    list-style-type: none;
+}
+.contact-type {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+}
+.contact-value {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+.value-link {
+    color: #000;
+    text-decoration: none;
+}
+.type-line {
+    margin: 20px 0px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+.article-text {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    width: 797px;
+    margin: 0;
+    margin-top: 25px;
+}
+
+
+.article-heading {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    color: #000000;
+}
+.middle-news-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E5F61;
+    margin: 5px 0px;
+    padding-top: 50px;
+}
+.middle-link-icon {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+
+.bottom-section-line {
+    width: 780px;
+    height: 0px;
+    border: 1px solid #D2D2D2;
+    margin-bottom: 50px;
+}
+
+
+.bottom-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+}
+.bottom-item {
+    padding: 0;
+    padding: 18px;
+    list-style-type: none;
+    background-color: #F6F6F6;
+    vertical-align: middle;
+}
+
+.arrow-up {
+	padding: 10px;
+	position: fixed;
+	bottom: 30px;
+	right: 10px;
+	border-radius: 50%;
+	background: #7297EF;
+}
+.arrow-up img {
+    color: #fff;
+}
+
+
+
